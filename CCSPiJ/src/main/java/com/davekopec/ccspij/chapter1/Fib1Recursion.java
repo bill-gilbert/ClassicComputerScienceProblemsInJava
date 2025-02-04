@@ -16,23 +16,15 @@
 
 package com.davekopec.ccspij.chapter1;
 
-public class Fib1 {
+public class Fib1Recursion {
 
     // This method will cause a java.lang.StackOverflowError
     public static int fib1(int n) {
-        //TODO Fix :)
-        /**
         if (n == 0) {
             return 0;
         } else if (n == 1) {
             return 1;
         }
-        */
         return fib1(n - 1) + fib1(n - 2);
-    }
-
-    public static void main(String[] args) {
-        // Don't run this!
-        System.out.println(fib1(5));
     }
 }
